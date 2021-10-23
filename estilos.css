@@ -165,6 +165,9 @@ body{
     justify-content: space-around;
     color: white;
 }
+.footer-menu li{
+  list-style: none;
+}
 .publicidad{
     grid-area: publicidad;
     padding: 1rem;
