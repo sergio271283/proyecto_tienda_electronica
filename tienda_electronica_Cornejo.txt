@@ -1,0 +1,128 @@
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$ git add index.html
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$ git add estilos.css
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   estilos.css
+        modified:   index.html
+
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$ git commit -m "html y estilos"
+[master 639eced] html y estilos
+ 2 files changed, 17 insertions(+)
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$ git diff
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$ git add index.html
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$ git add estilos.css
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$ git commit -m "segunda modificacion"
+[master 60c1b39] segunda modificacion
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$ git log
+commit 60c1b3949e2c102a92fea04c21cbaac80e7b6841 (HEAD -> master)
+Author: sergio2712 <assassin2712@hotmail.com>
+Date:   Sat Oct 23 00:17:40 2021 -0300
+
+    segunda modificacion
+
+commit 639ecede01cbdf7412d54253acc83b1094db8d5c
+Author: sergio2712 <assassin2712@hotmail.com>
+Date:   Sat Oct 23 00:14:12 2021 -0300
+
+    html y estilos
+
+commit 6efb1884957bf75a76c0d4791e71dfa37d689a85
+Author: sergio2712 <assassin2712@hotmail.com>
+Date:   Sat Oct 23 00:03:43 2021 -0300
+
+    otro commit
+
+commit 44d64a02da9e239ef05803d4aa2081dde5ea43cb
+Author: sergio2712 <assassin2712@hotmail.com>
+Date:   Fri Oct 22 23:51:06 2021 -0300
+
+    html inicial
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$ git branch grid_box
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$ git branch responsive
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$ git branch -l
+  grid_box
+* master
+  responsive
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$ git checkout responsive
+Switched to branch 'responsive'
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (responsive)
+$ git log --oneline
+60c1b39 (HEAD -> responsive, master, grid_box) segunda modificacion
+639eced html y estilos
+6efb188 otro commit
+44d64a0 html inicial
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (responsive)
+$ git checkout ^C
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (responsive)
+$ git checkout 6efb188
+Note: switching to '6efb188'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 6efb188 otro commit
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo ((6efb188...))
+$ git checkout -b nuevo_estilo
+Switched to a new branch 'nuevo_estilo'
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (nuevo_estilo)
+$ git checkout master
+Switched to branch 'master'
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$ git merge nuevo_estilo
+Already up to date.
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$ git  log --oneline --graph
+* 60c1b39 (HEAD -> master, responsive, grid_box) segunda modificacion
+* 639eced html y estilos
+* 6efb188 (nuevo_estilo) otro commit
+* 44d64a0 html inicial
+
+assas@DESKTOP-2A3E6C6 MINGW64 ~/Desktop/CODERHOUSE/GIT ENTREGABLE/nuevo_repo (master)
+$

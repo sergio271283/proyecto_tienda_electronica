@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body id="contacto">
+  <div class="grilla">
+  <script src="https://kit.fontawesome.com/9376bdc2f4.js" crossorigin="anonymous"></script>    
+  <header class="header-banner">
+    <div class="logo">
+      <img src="./img/logo blanco.png" alt="logo">
+    </div>
+      <div class="caja-menu">
+        <ul class="header__navbar--principal">
+          <li> <a href="index.html">Inicio</a> </li>
+          <li> <a href="arduino.html">Arduino</a> </li>
+          <li> <a href="Raspberry.html">Raspberry Pi</a> </li>
+          <li> <a href="Componentes.html">Componentes</a>  </li>
+          <li> <a href="Software.html">Software</a> </li>
+          <li><a href="contacto.html"> Contacto</a></li>
+        </ul>
+      </div>
+  </header> 
+  <!-- CATEGORIAS  NAVEGACION-->
+  <nav class="categorias">
+    <h4>Categorias</h4>
+    <ul>
+      <li>sensores</li>
+      <li>Placas de Desarrollo</li>
+      <li>Componentes</li>
+      <li>utilidades</li>
+      <li>software</li>
+    </ul>
+  </nav>
+<!--*********** SECCIONES ******************-->
+  <section class="secciones">
+  <div class="caja-formulario">
+  <div class="caja-categorias">
+    <form action="" >
+        <fieldset class="formulario">
+            <legend>Formulario de Contacto</legend>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" placeholder="Ingrese su Nombre" required>
+            <br>
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" placeholder="Ingrese su apellido" required>
+            <br>
+            <br>
+            <label for="telefono">Telefono</label>
+            <input type="text" name="telefono" placeholder="Ingrese su Telefono" required>
+            <br>
+            <br>
+            <label for="correo">Correo Electronico</label>
+            <input type="text" name="correo" placeholder="Ingrese su Correo" required>
+            <br>
+            <br>
+            <label for="motivo">Motivo de Contacto</label>
+            <select name="motivo" id="">
+                <option value="" required="">Selecciona Motivo</option>
+                <option value="Consulta"required >Consultas</option>
+                <option value="Reclamo"required>Reclamo</option> 
+                <option value="Cotizacion"required>Cotizacion</option>
+            </select>
+            <br>
+            <br>
+            <label for="Sucursal">Sucursal</label>
+            <br>
+            <div>Antofagasta</div>
+            <input type="radio" name="sucursal" value="Antofagasta" checked="checked">  
+            <div>Calama</div>
+            <input type="radio" name="Sucursal" value="Calama">
+            <div>Mejillones</div>  
+            <input type="radio" name="Sucursal" value="Mejillones">
+            <br>
+            <br>
+            <label for="Consulta">Escribe tu consulta</label>
+            <br>
+            <textarea name="Consulta" id="" cols="50" maxlength="500" rows="10"></textarea>
+            <br>
+            <br>
+            <div>Condiciones</div>
+            <br>
+            <input type="checkbox" name="cbox1">Acepto recibir promociones y novedades.
+            <br>
+            <br>
+            <input type="checkbox" name="cbox2">Acepto las condiciones de la pagina.
+            <br>
+            <br>
+            <input type="submit" value="Enviar Consulta">
+            <input type="reset" value="Limpiar Formulario">
+
+
+
+
+        </fieldset>
+    </form>
+  </div>
+  
+</div>
+</section>
+<!-- ************************************ -->
+
+  <!-- PUBLICIDAD -->
+  <aside class="publicidad">
+    <div>
+      <img src="./img/publicidad tienda 1.JPG" alt="">
+    </div>
+    <div>
+      <img src="./img/publicidad tienda 2.JPG" alt="">
+    </div>
+    <div>
+      <img src="./img/publicidad tienda 3.JPG" alt="">
+    </div>
+  </aside>
+    <!-- PIE DE PAGINA -->
+    <footer class="pie">
+      <div>
+        <ul class="footer-menu">
+          <li>
+            <i class="fab fa-facebook" >facebook</i>
+          </li>
+          <li>Instagram</li>
+          <li>whatsapp</li>
+          <li>Reddit</li>
+        </ul>
+      </div>
+      
+      <div >
+        <ul class="footer-menu">
+          <li>Inicio</li>
+          <li>Tutoriales</li>
+          <li>Reclamos</li>
+          <li>Comunidad</li>
+          <li>Blog</li>
+          <li>Contactanos</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="footer-menu">
+          <li>Política de Privacidad </li>
+          <li>Gestionar Mi Privacidad</li>
+          <li> Legal </li>
+          <li>Accesibilidad</li>
+        </ul>
+    </div>
+     
+            
+    </footer>
+    <div class="creditos">
+      desarrollado por sergio cornejo
+    </div>
+  </div>
+</body>
+</html>
