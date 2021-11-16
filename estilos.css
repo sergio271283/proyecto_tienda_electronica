@@ -1,77 +1,174 @@
-body {
-  font-family: calibri;
+@import url(./css/bootstrap.css);
+/* ------------------ BANNER PRINCIPAL -----------------*/
+.banner {
+  grid-area: banner;
+  background-color: black;
+  margin: 2rem;
+}
+
+.banner li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.banner img {
+  width: 13rem;
+}
+
+.banner a {
+  padding: 1rem;
+  margin: 1rem;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+.banner a:hover {
+  color: red;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+/* ********************************************* */
+.grillapie {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logopie sobrefys serviciosfys comunidadfys";
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  -ms-grid-columns: 40% 20% 20% 20%;
+      grid-template-columns: 40% 20% 20% 20%;
+  background-color: black;
+  padding-bottom: 5rem;
+}
+
+.logopie {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logopie;
+  text-align: center;
+}
+
+.logopie ul {
+  text-align: center;
+}
+
+.sobrefys {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: sobrefys;
+  text-align: start;
+  padding-top: 3rem;
+}
+
+.sobrefys li {
+  color: white;
+  list-style: none;
+}
+
+.sobrefys li a {
+  text-decoration: none;
+  color: white;
+}
+
+.sobrefys li a:hover {
+  color: #0fbaee;
+}
+
+.serviciosfys {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: serviciosfys;
+  padding-top: 3rem;
+}
+
+.serviciosfys li {
+  color: white;
+  list-style: none;
+}
+
+.serviciosfys li a {
+  color: white;
+  text-decoration: none;
+}
+
+.serviciosfys li a:hover {
+  color: #0fbaee;
+}
+
+.comunidadfys {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: comunidadfys;
+  padding-top: 3rem;
+}
+
+.comunidadfys li {
+  color: white;
+  list-style: none;
+}
+
+.comunidadfys li a {
+  color: white;
+  text-decoration: none;
+}
+
+.comunidadfys li a:hover {
+  color: #0fbaee;
 }
 
 .grilla {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "banner banner banner" "categorias secciones publicidad" "categorias secciones publicidad" "pie pie pie" "creditos creditos creditos";
-  -ms-grid-rows: 190px auto 100px 150px 50px;
-      grid-template-rows: 190px auto 100px 150px 50px;
-  -ms-grid-columns: 20% auto px;
-      grid-template-columns: 20% auto px;
-  grid-row-gap: 2px;
-  grid-column-gap: 2px;
+      grid-template-areas: "categorias secciones publicidad";
+  -ms-grid-rows: auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
 }
 
-/* ------------------ BANNER PRINCIPAL -----------------*/
-.header-banner {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: banner;
-  background-image: url(./img/fondorojo.jpg);
-  background-color: #4972be;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.header-banner--principal {
-  color: black;
-  font-size: 30px;
-}
-
-.header__navbar--principal li {
-  display: inline-block;
-  padding: 1rem;
-}
-
-.header__navbar--principal a {
-  text-decoration: none;
-  text-align: center;
-  color: black;
-  padding: 1px;
-  margin: 1px;
-  color: white;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-.header__navbar--principal a:hover {
-  color: red;
-  background-color: black;
-  border: 2px solid white;
-}
-
-/* ********************************************* */
 /* ---------- CATEGORIAS --------------- */
 .categorias {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: categorias;
-  background-image: url(./img/fondorojo.jpg);
-  color: white;
+  background-color: black;
+  color: red;
   padding: 1rem;
   background-repeat: repeat;
   font-size: 18px;
-  font-weight: 800;
+}
+
+.categorias li {
+  padding: 0.5rem;
+  list-style: none;
+}
+
+.categorias a {
+  padding: 1rem;
+  margin: 1rem;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+.categorias a:hover {
+  color: red;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 /* --------------SECCIONES --------------------- */
 .secciones {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: secciones;
   padding: 1rem;
@@ -156,7 +253,7 @@ body {
   font-size: 18px;
 }
 
-.local li {
+.descripcion li {
   display: inline-block;
 }
 
@@ -193,9 +290,6 @@ body {
 /* ----------------------------------- */
 /* PIE DE PAGINA */
 .pie {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: pie;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,19 +305,15 @@ body {
 }
 
 .publicidad {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: publicidad;
   padding: 1rem;
-  background-image: url(./img/fondorojo.jpg);
   color: white;
+  background-color: black;
 }
 
 .creditos {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: creditos;
   background-image: url(./img/fondorojo.jpg);
   color: white;
@@ -288,291 +378,18 @@ body {
   animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
 
-@-webkit-keyframes noise-anim {
-  0% {
-    clip: rect(51px, 9999px, 28px, 0);
-  }
-  5% {
-    clip: rect(70px, 9999px, 19px, 0);
-  }
-  10% {
-    clip: rect(92px, 9999px, 13px, 0);
-  }
-  15% {
-    clip: rect(85px, 9999px, 49px, 0);
-  }
-  20% {
-    clip: rect(45px, 9999px, 56px, 0);
-  }
-  25% {
-    clip: rect(26px, 9999px, 31px, 0);
-  }
-  30% {
-    clip: rect(62px, 9999px, 73px, 0);
-  }
-  35% {
-    clip: rect(34px, 9999px, 11px, 0);
-  }
-  40% {
-    clip: rect(26px, 9999px, 61px, 0);
-  }
-  45% {
-    clip: rect(34px, 9999px, 71px, 0);
-  }
-  50% {
-    clip: rect(35px, 9999px, 69px, 0);
-  }
-  55% {
-    clip: rect(92px, 9999px, 81px, 0);
-  }
-  60% {
-    clip: rect(26px, 9999px, 85px, 0);
-  }
-  65% {
-    clip: rect(2px, 9999px, 68px, 0);
-  }
-  70% {
-    clip: rect(54px, 9999px, 79px, 0);
-  }
-  75% {
-    clip: rect(35px, 9999px, 85px, 0);
-  }
-  80% {
-    clip: rect(70px, 9999px, 60px, 0);
-  }
-  85% {
-    clip: rect(32px, 9999px, 26px, 0);
-  }
-  90% {
-    clip: rect(94px, 9999px, 53px, 0);
-  }
-  95% {
-    clip: rect(99px, 9999px, 92px, 0);
-  }
-  100% {
-    clip: rect(42px, 9999px, 27px, 0);
-  }
+/* %%%%%%  PAGINA EN CONSTRUCCION  %%%%%%%%%%%%%%%%%%%%%%% */
+.img-holder {
+  position: relative;
 }
 
-@keyframes noise-anim {
-  0% {
-    clip: rect(51px, 9999px, 28px, 0);
-  }
-  5% {
-    clip: rect(70px, 9999px, 19px, 0);
-  }
-  10% {
-    clip: rect(92px, 9999px, 13px, 0);
-  }
-  15% {
-    clip: rect(85px, 9999px, 49px, 0);
-  }
-  20% {
-    clip: rect(45px, 9999px, 56px, 0);
-  }
-  25% {
-    clip: rect(26px, 9999px, 31px, 0);
-  }
-  30% {
-    clip: rect(62px, 9999px, 73px, 0);
-  }
-  35% {
-    clip: rect(34px, 9999px, 11px, 0);
-  }
-  40% {
-    clip: rect(26px, 9999px, 61px, 0);
-  }
-  45% {
-    clip: rect(34px, 9999px, 71px, 0);
-  }
-  50% {
-    clip: rect(35px, 9999px, 69px, 0);
-  }
-  55% {
-    clip: rect(92px, 9999px, 81px, 0);
-  }
-  60% {
-    clip: rect(26px, 9999px, 85px, 0);
-  }
-  65% {
-    clip: rect(2px, 9999px, 68px, 0);
-  }
-  70% {
-    clip: rect(54px, 9999px, 79px, 0);
-  }
-  75% {
-    clip: rect(35px, 9999px, 85px, 0);
-  }
-  80% {
-    clip: rect(70px, 9999px, 60px, 0);
-  }
-  85% {
-    clip: rect(32px, 9999px, 26px, 0);
-  }
-  90% {
-    clip: rect(94px, 9999px, 53px, 0);
-  }
-  95% {
-    clip: rect(99px, 9999px, 92px, 0);
-  }
-  100% {
-    clip: rect(42px, 9999px, 27px, 0);
-  }
+.img-holder .link {
+  position: absolute;
+  left: 37rem;
+  /*button position*/
+  /*button position*/
+  top: 7rem;
 }
 
-@-webkit-keyframes noise-anim-2 {
-  0% {
-    clip: rect(21px, 9999px, 49px, 0);
-  }
-  5% {
-    clip: rect(27px, 9999px, 52px, 0);
-  }
-  10% {
-    clip: rect(21px, 9999px, 70px, 0);
-  }
-  15% {
-    clip: rect(65px, 9999px, 25px, 0);
-  }
-  20% {
-    clip: rect(24px, 9999px, 10px, 0);
-  }
-  25% {
-    clip: rect(61px, 9999px, 64px, 0);
-  }
-  30% {
-    clip: rect(34px, 9999px, 47px, 0);
-  }
-  35% {
-    clip: rect(46px, 9999px, 93px, 0);
-  }
-  40% {
-    clip: rect(46px, 9999px, 9px, 0);
-  }
-  45% {
-    clip: rect(67px, 9999px, 36px, 0);
-  }
-  50% {
-    clip: rect(72px, 9999px, 20px, 0);
-  }
-  55% {
-    clip: rect(79px, 9999px, 26px, 0);
-  }
-  60% {
-    clip: rect(13px, 9999px, 87px, 0);
-  }
-  65% {
-    clip: rect(10px, 9999px, 25px, 0);
-  }
-  70% {
-    clip: rect(85px, 9999px, 11px, 0);
-  }
-  75% {
-    clip: rect(94px, 9999px, 35px, 0);
-  }
-  80% {
-    clip: rect(50px, 9999px, 86px, 0);
-  }
-  85% {
-    clip: rect(74px, 9999px, 67px, 0);
-  }
-  90% {
-    clip: rect(1px, 9999px, 40px, 0);
-  }
-  95% {
-    clip: rect(3px, 9999px, 48px, 0);
-  }
-  100% {
-    clip: rect(90px, 9999px, 23px, 0);
-  }
-}
-
-@keyframes noise-anim-2 {
-  0% {
-    clip: rect(21px, 9999px, 49px, 0);
-  }
-  5% {
-    clip: rect(27px, 9999px, 52px, 0);
-  }
-  10% {
-    clip: rect(21px, 9999px, 70px, 0);
-  }
-  15% {
-    clip: rect(65px, 9999px, 25px, 0);
-  }
-  20% {
-    clip: rect(24px, 9999px, 10px, 0);
-  }
-  25% {
-    clip: rect(61px, 9999px, 64px, 0);
-  }
-  30% {
-    clip: rect(34px, 9999px, 47px, 0);
-  }
-  35% {
-    clip: rect(46px, 9999px, 93px, 0);
-  }
-  40% {
-    clip: rect(46px, 9999px, 9px, 0);
-  }
-  45% {
-    clip: rect(67px, 9999px, 36px, 0);
-  }
-  50% {
-    clip: rect(72px, 9999px, 20px, 0);
-  }
-  55% {
-    clip: rect(79px, 9999px, 26px, 0);
-  }
-  60% {
-    clip: rect(13px, 9999px, 87px, 0);
-  }
-  65% {
-    clip: rect(10px, 9999px, 25px, 0);
-  }
-  70% {
-    clip: rect(85px, 9999px, 11px, 0);
-  }
-  75% {
-    clip: rect(94px, 9999px, 35px, 0);
-  }
-  80% {
-    clip: rect(50px, 9999px, 86px, 0);
-  }
-  85% {
-    clip: rect(74px, 9999px, 67px, 0);
-  }
-  90% {
-    clip: rect(1px, 9999px, 40px, 0);
-  }
-  95% {
-    clip: rect(3px, 9999px, 48px, 0);
-  }
-  100% {
-    clip: rect(90px, 9999px, 23px, 0);
-  }
-}
-
-/* PRUEBA SASS */
-.sassheader div {
-  display: inline-block;
-}
-
-.sassheader__logo img {
-  width: 5%;
-}
-
-.sassheader__menu--secciones li {
-  display: inline-block;
-  padding: 2rem;
-}
-
-.sasscontenido div {
-  display: inline-block;
-}
-
-.sasscontenido img {
-  width: 30%;
-}
-
-/*FIN DE PRUEBA SASS */
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 /*# sourceMappingURL=estilos.css.map */

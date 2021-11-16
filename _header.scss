@@ -1,0 +1,35 @@
+/* ------------------ BANNER PRINCIPAL -----------------*/
+.banner{
+    grid-area: banner;
+    background-color: rgb(0, 0, 0);
+    margin: 2rem;
+    li{
+      display: inline-block;
+      padding: 1rem;
+    }
+    img{
+      width: 13rem;
+    }
+    a{
+      padding: 1rem;
+      margin: 1rem;
+      color: white;
+      font-size: 18px;
+      font-weight:bold;
+
+        text: {
+        decoration:none;
+        align: center;
+        }
+    }
+    a:hover{
+        color: red;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+
+}   
+
+/* ********************************************* */

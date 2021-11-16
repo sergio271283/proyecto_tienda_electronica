@@ -5,60 +5,339 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FyS Electronica</title>   
+    <meta name="Tienda Componentes Electronicos" content="Venta de >Componentes Electronicos para arduino, raspberry Pi y componentes Electronicos en General">
+    <meta name="keywords" content="Arduino, Electronica, Componentes Electronicos, Computacion, tienda online, redes">
     <link rel="stylesheet" href="estilos.css">
-    
+   
   </head>  
-  <body class="contenido">
-    <div class="grilla">
-    <script src="https://kit.fontawesome.com/9376bdc2f4.js" crossorigin="anonymous"></script>    
-    <!-- BANNER PRINCIPAL DE PAGINA -->
-    <header class="header-banner">
-      <div class="logo">
-        <img src="./img/logo blanco.png" alt="logo" >
+  <body>
+    <div class="container-fluid bg-black">
+      <div class="row justify-content-between">
+        <div class="d-flex">
+          <div class="col-6 justify-content-between">
+            <ul class="list-group list-group-horizontal justify-content-start list-unstyled ">
+              <li><a class="text-white" href=""><i class="fa fa-phone ms-5 mt-3 text-info"></i> +56 9 90823648</a></li>
+              <li><a class="text-white" href=""><i class="fa fa-envelope ms-5 mt-3 text-info"></i> s.cornejo.ayc@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="col-6 justify-content-between">
+            <ul class="list-group list-group-horizontal justify-content-end list-unstyled">
+              <li><a href=""><i class="fab fa-facebook-f me-3 mt-3 text-info"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter me-3 mt-3 text-info"></i></a></li>
+              <li><a href=""><i class="fa fa-linkedin me-3 mt-3 text-info"></i></a></li>
+              <li><a href=""><i class="fa fa-dribbble me-3 mt-3 text-info"></i></a></li>
+              <li><a href=""><i class="fa fa-google-plus me-3 mt-3 text-info"></i></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-        <div class="caja-menu">
-          <ul class="header__navbar--principal">
-            <li> <a href="index.html">Inicio</a> </li>
-            <li> <a href="arduino.html">Arduino</a> </li>
-            <li> <a href="Raspberry.html">Raspberry Pi</a> </li>
-            <li> <a href="Componentes.html">Componentes</a>  </li>
-            <li> <a href="Software.html">Software</a> </li>
-            <li><a href="contacto.html"> Contacto</a></li>
-            <li><a href="prueba sass.html"> prueba SASS</a></li>
+  </div>
+        <!-- BANNER PRINCIPAL DE PAGINA -->
+      <header class="container-fluid m-0 p-0">
+      <nav class="navbar navbar-expand-lg bg-black text-white ">
+        <div class="container-fluid">
+          <img src="./img/logo blanco.png" alt="" class="navbar-brand mr-2">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Arduino
+                </a>
+                <ul class="dropdown-menu bg-black border-info" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-white bg-black" href="#">Arduino Leonardo</a></li>
+                  <li><a class="dropdown-item text-white bg-black" href="#">Arduino Micro</a></li>
+                  <li><a class="dropdown-item text-white bg-black" href="#">Arduino mega</a></li>
+                  <li><a class="dropdown-item text-white bg-black" href="#">Arduino Nano</a></li>
+                  <li><a class="dropdown-item text-white bg-black" href="#">Arduino UNO</a></li>
+                  <li><a class="dropdown-item text-white bg-black" href="#">Arduino Due</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-white bg-black" href="#">Otras Placas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Raspberry
+                </a>
+                <ul class="dropdown-menu bg-black border-info" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Raspberry Pi 4B</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Raspberry Pi 3 B+</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Raspberry Pi ZERO W</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Raspberry Pi ZERO WH</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Raspberry Pi ZERO</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Otras Placas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Componentes
+                </a>
+                <ul class="dropdown-menu bg-black border-info" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Sensores</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Transistores</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Resistencias</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">LED</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Diodos</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Cables</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Botones</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Reles</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Displays</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Action</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Condensadores</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Bobinas</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">PIC</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Otros Componentes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Software
+                </a>
+                <ul class="dropdown-menu bg-black border-info" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Matlab</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Proteus</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Autocad</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Arduino IO Simulator</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">LogicSim</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">FluidSim</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Otros Software</a></li>
+                </ul>
+  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Tutoriales
+                </a>
+                <ul class="dropdown-menu bg-black border-info" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Arduino</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Raspberry Pi</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Matlab</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Raspberry Pi Zero</a></li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Proteus</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item  text-white bg-black" href="#">Otros Tutoriales</a></li>
+                </ul>
+              </li>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2 border-info" type="search" placeholder="Buscar Producto . ."
+                aria-label="search">
+              <button class="btn btn-outline-primary border-info text-white" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+      <!-- --------------------------------- -->
+      <div class="grilla">
+      
+    <!-- CATEGORIAS  NAVEGACION-->
+    <div class="categorias">
+    <div class="bg-black text-white ps-2 pt-5">
+      <h5 class="text-center">Categorias</h5>
+      <div class="border border-info rounded py-4 my-3">
+      <p>
+        <a class="btn text-white fs-6 " data-bs-toggle="collapse" href="#collapseExample01" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Sensores
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample01">
+        <div class="card card-body bg-black">
+          <ul class="list-unstyled bg-black" >
+            <li>
+              <a  class="text-white bg-black" href=""><i class="fa fa-chevron-right fa-xs me-2"  aria-hidden="true"></i>Temperatura</a>
+            </li>
+            <li>
+              <a  class="text-white bg-black"href=""><i class="fa fa-chevron-right fa-xs me-2"  aria-hidden="true"></i>Movimiento</a>
+            </li>
+            <li>
+              <a class="text-white bg-black" href=""><i class="fa fa-chevron-right fa-xs me-2"  aria-hidden="true"></i>Nivel</a>
+            </li>
+            <li>
+              <a  class="text-white bg-black"href=""><i class="fa fa-chevron-right fa-xs me-2"  aria-hidden="true"></i>Humedad</a>
+            </li>
+            <li>
+              <a  class="text-white bg-black" href=""><i class="fa fa-chevron-right fa-xs me-2"  aria-hidden="true"></i>Ruido</a>
+            </li> 
           </ul>
         </div>
-    </header> 
-    <!-- --------------------------------- -->
-    <!-- CATEGORIAS  NAVEGACION-->
-    <nav class="categorias">
-      <h4>Categorias</h4>
-      <ul>
-        <li>sensores</li>
-        <li>Placas de Desarrollo</li>
-        <li>Componentes</li>
-        <li>utilidades</li>
-        <li>software</li>
-      </ul>
-    </nav>
-      <!-- SECCIONES DE PAGINA -->
-      <section class="secciones">      
-          <h2>Novedades</h2>
-          <img src="./img/productos.jpeg" alt="galeria">
-          <p>Estos son los ultimos productos llegados a nuestra tienda</p>
-      <!-- RULETA DE VIDEOS -->
+      </div>
+      <p>
+        <a class="btn text-white" data-bs-toggle="collapse" href="#collapseExample02" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Componentes
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample02">
+        <div class="card card-body  bg-black">
+          <ul class="list-unstyled" >
+            <li>
+              <a  class="text-white bg-black" href=""><i class="fa fa-chevron-right fa-xs me-2"  aria-hidden="true"></i> capacitores</a>
+            </li>
+            <li>
+              <a  class="text-white bg-black" href=""><i class="fa fa-chevron-right fa-xs me-2"  aria-hidden="true"></i>Transistores</a>
+            </li>
+            <li>
+              <a  class="text-white bg-black" href=""><i class="fa fa-chevron-right fa-xs me-2"  aria-hidden="true"></i>Diodos</a>
+            </li>
+            <li>
+              <a  class="text-white bg-black" href=""><i class="fa fa-chevron-right fa-xs me-2"  aria-hidden="true"></i>Led</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        <a class="btn text-white" data-bs-toggle="collapse" href="#collapseExample03" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Medicion
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample03">
+        <div class="card card-body  bg-black">
+          <ul class="list-unstyled" >
+            <li>
+              <a  class="text-white bg-black" href=""><i class="fa fa-chevron-right fa-xs me-2"  aria-hidden="true"></i>Voltimetros</a>
+            </li>
+            <li>
+              <a class="text-white bg-black"  href=""><i class="fa fa-chevron-right fa-xs me-2"  aria-hidden="true"></i>Amperimetros</a>
+            </li>
+            <li>
+              <a class="text-white bg-black"  href=""><i class="fa fa-chevron-right fa-xs me-2"  aria-hidden="true"></i>Osciloscopios</a>
+            </li>
+            <li>
+              <a class="text-white bg-black"  href=""><i class="fa fa-chevron-right fa-xs me-2"  aria-hidden="true"></i>Termografia</a>
+            </li>
+            <li>
+              <a  class="text-white bg-black" href=""><i class="fa fa-chevron-right fa-xs me-2"  aria-hidden="true"></i>Aislacion</a>
+            </li> 
+          </ul>
+        </div>
+      </div> 
 
-  
-    <div class="video">
-      <iframe width="400" height="260" src="https://www.youtube.com/embed/0DHL6qkrmu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>             
-    </section>
+    </div>
+    </div>
+  </div>
+      <!-- SECCIONES DE PAGINA -->
+      <section class="secciones">   
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/Carrusel_ofertas01.JPG" class="d-block img-fluid w-75 rounded mx-auto d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/Carrusel_ofertas02.JPG" class="d-block img-fluid w-75 rounded mx-auto d-block" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/Carrusel_ofertas03.JPG" class="d-block img-fluid w-75 rounded mx-auto d-block" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div>
+            <div class="my-5">
+              <h4 class="text-center">Productos Recomendados</h4>
+            </div>
+            <div id="carousel_r" class="carousel slide my-2 py-2" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-4"><img src="./img/Articulos Recomendados/recomendado03.JPG" class="d-block img-fluid w-50 rounded mx-auto d-block" alt="..."></div>
+                    <div class="col-lg-4"><img src="./img/Articulos Recomendados/recomendado01.JPG" class="d-block img-fluid w-50 rounded mx-auto d-block" alt="..."></div>
+                    <div class="col-lg-4"><img src="./img/Articulos Recomendados/recomendado02.JPG" class="d-block img-fluid w-50 rounded mx-auto d-block" alt="..."></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-4"><img src="./img/Articulos Recomendados/recomendado03.JPG" class="d-block img-fluid w-50 rounded mx-auto d-block" alt="..."></div>
+                    <div class="col-lg-4"><img src="./img/Articulos Recomendados/recomendado01.JPG" class="d-block img-fluid w-50 rounded mx-auto d-block" alt="..."></div>
+                    <div class="col-lg-4"><img src="./img/Articulos Recomendados/recomendado02.JPG" class="d-block img-fluid w-50 rounded mx-auto d-block" alt="..."></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-4"><img src="./img/Articulos Recomendados/recomendado03.JPG" class="d-block img-fluid w-50 rounded mx-auto d-block" alt="..."></div>
+                    <div class="col-lg-4"><img src="./img/Articulos Recomendados/recomendado01.JPG" class="d-block img-fluid w-50 rounded mx-auto d-block" alt="..."></div>
+                    <div class="col-lg-4"><img src="./img/Articulos Recomendados/recomendado02.JPG" class="d-block img-fluid w-50 rounded mx-auto d-block" alt="..."></div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel_r" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon btn-info" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel_r" data-bs-slide="next">
+                <span class="carousel-control-next-icon btn-info" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+       <div class="my-5">   
+      <div id="carruselvideos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h4 class="text-center">Conoce Los Principales Sensores de Arduino/Raspberry Pi</h4>
+            <iframe class="d-block w-50 rounded mx-auto" width="400" height="260" src="https://www.youtube.com/embed/0DHL6qkrmu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+          </div>
+          <div class="carousel-item">
+            <h4 class="text-center">Crea Una Planta Con Arduino Y Simulink</h4>
+            <iframe class="d-block w-50 rounded mx-auto" width="560" height="315" src="https://www.youtube.com/embed/qrN35u2WVXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="carousel-item">
+            <h4 class="text-center">Crea Un Sensor de Reversa Con Arduino</h4>
+            <iframe class="d-block w-50 rounded mx-auto" width="560" height="315" src="https://www.youtube.com/embed/MT-Yvm4Zla8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselvideos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon btn-info" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselvideos" data-bs-slide="next">
+          <span class="carousel-control-next-icon btn-info" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+           
+      </section>
 
       <!-- PUBLICIDAD -->
     <aside class="publicidad">
-      <div>
-        <img src="./img/publicidad tienda 1.JPG" alt="">
+      <h4 class="text-center mb-2 pb-2">Servicios</h4>
+      <div class="my-2 py-2 border border-info rounded">
+        <h6 class="text-center">Arma Tu PC</h6>
+        <img class="img-fluid" src="./img/Armapc02.JPG" alt="">
+        <p class="fs-6 text-center">Escoje lo que se Ajuste a tu Bolsillo Y a Tu Juego</p>
       </div>
-      <div>
-        <img src="./img/publicidad tienda 2.JPG" alt="">
+      <div class="my-2 py-2 border border-info rounded"> 
+        <h6 class="text-center">Acelera tu Viejo PC o Laptop</h6>
+        <img class="img-fluid" src="./img/Armapc01.JPG" alt="">
+        <p class="text-center" >Dale Vida A tu Viejo PC Con SSD o Memorias Ram</p>
       </div>
       <div>
         <img src="./img/publicidad tienda 3.JPG" alt="">
@@ -66,40 +345,60 @@
     </aside>
   
   <!-- ----------------- -->
-  <!-- PIE DE PAGINA -->
-    <footer class="pie">
-      <div>
-        <ul class="footer-menu">
-          <li>
-            <i class="fab fa-facebook" >facebook</i>
-          </li>
-          <li>Instagram</li>
-          <li>whatsapp</li>
-          <li>Reddit</li>
+
+    </div>
+      <!-- PIE DE PAGINA -->
+      <footer class="grillapie">
+        <div class="logopie">
+         
+          <div>
+          <img src="./img/logo blanco.png" alt="">
+        </div>
+        <div>
+          <p class="pt-2 text-white">Siguenos en</p>
+        </div>
+        <div>
+          <ul class="list-group list-group-horizontal justify-content-center list-unstyled">
+            <li><a href=""><i class="fab fa-facebook-f me-3 mt-3 text-info"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter me-3 mt-3 text-info"></i></a></li>
+            <li><a href=""><i class="fa fa-linkedin me-3 mt-3 text-info"></i></a></li>
+            <li><a href=""><i class="fa fa-dribbble me-3 mt-3 text-info"></i></a></li>
+            <li><a href=""><i class="fa fa-google-plus me-3 mt-3 text-info"></i></a></li>
+          </ul>
+        </div>
+        </div>
+        
+        <div class="sobrefys">
+          <ul>
+            <li><a href=""> Acerca de Nosotros</a></li>
+            <li><a href=""> Politicas de Privacidad</a></li>
+            <li><a href=""> Garantias</a></li>
+            <li><a href=""> Reclamos</a></li>
+            <li><a href=""> Trabaja Con Nosotros</a></li>
+            <li><a href=""> Contactanos</a></li>
+          </ul>
+        </div>
+        <div class="serviciosfys">
+          <ul>
+            <li><a href=""> Despachos</a></li>
+            <li><a href=""> Formas de Pago</a></li>
+            <li><a href=""> Arma Tu Pc</a></li>
+            <li><a href=""> Venta Empresas</a></li>
+          </ul>
+      </div>
+      <div class="comunidadfys">
+        <ul>
+          <li><a href=""> Blog</a></li>
+          <li><a href=""> Canales de Informacion</a></li>
+          <li><a href=""> Aporta tu Proyecto</a></li>
+          <li><a href=""> Pregunta a La Comunidad</a></li>
         </ul>
       </div>
-      
-      <div >
-        <ul class="footer-menu">
-          <li>Inicio</li>
-          <li>Tutoriales</li>
-          <li>Reclamos</li>
-          <li>Comunidad</li>
-          <li>Blog</li>
-          <li>Contactanos</li>
-        </ul>
-      </div>
-      <div>
-        <ul class="footer-menu">
-          <li>Política de Privacidad </li>
-          <li>Gestionar Mi Privacidad</li>
-          <li> Legal </li>
-          <li>Accesibilidad</li>
-        </ul>
-    </div>
-     
-            
-    </footer>
-    </div>
+       
+              
+      </footer>
   </body>  
+  <script src="https://kit.fontawesome.com/9376bdc2f4.js" crossorigin="anonymous"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </html>

@@ -1,0 +1,69 @@
+
+.grillapie{
+    display: grid;
+    grid-template-areas: 
+    "logopie sobrefys serviciosfys comunidadfys"
+    ;
+    grid-template-rows: 100%;
+    grid-template-columns: 40% 20% 20% 20%;
+    background-color: black;
+    padding-bottom: 5rem;
+  
+}
+.logopie{
+    grid-area: logopie;
+    text-align: center;
+    ul{
+        text-align: center;
+    }
+    
+}
+.sobrefys{
+    grid-area: sobrefys;
+    text-align: start;
+    padding-top: 3rem;
+
+    li{
+        color: white;
+        list-style: none;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: rgb(15, 186, 238);
+        }
+    }
+}
+.serviciosfys{
+    grid-area: serviciosfys;
+    padding-top: 3rem;
+
+    li{
+        color: white;
+        list-style: none;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(15, 186, 238);
+        }
+    }
+}
+.comunidadfys{
+    grid-area: comunidadfys;
+    padding-top: 3rem;
+    li{
+        color: white;
+        list-style: none;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color: rgb(15, 186, 238);
+        }
+    }
+}
