@@ -18,8 +18,8 @@
         <div class="d-flex">
           <div class="col-6 justify-content-between">
             <ul class="list-group list-group-horizontal justify-content-start list-unstyled ">
-              <li><a class="text-white" href=""><i class="fa fa-phone ms-5 mt-3 text-info"></i> +56 9 90823648</a></li>
-              <li><a class="text-white" href=""><i class="fa fa-envelope ms-5 mt-3 text-info"></i> s.cornejo.ayc@gmail.com</a></li>
+              <li><a class="text-white" href=""><i class="fa fa-phone ms-5 mt-3 text-info"></i><span class="d-none d-lg-inline"> +56 9 90823648</span></a></li>
+              <li><a class="text-white" href=""><i class="fa fa-envelope ms-5 mt-3 text-info"></i><span class="d-none d-lg-inline"> s.cornejo.ayc@gmail.com</span></a></li>
             </ul>
           </div>
           <div class="col-6 justify-content-between">
@@ -36,7 +36,44 @@
   </div>
         <!-- BANNER PRINCIPAL DE PAGINA -->
       <header class="container-fluid m-0 p-0">
-      <nav class="navbar navbar-expand-lg bg-black text-white ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-block d-sm-block d-lg-none">
+          <div class="container-fluid">
+            <img class="img-fliud my-auto mx-auto" src="./img/logo blanco.png" width="130px" alt="">
+            <a class="navbar-brand"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      <nav class="navbar navbar-expand-lg bg-black text-white d-none d-lg-block">
         <div class="container-fluid">
           <img src="./img/logo blanco.png" alt="" class="navbar-brand mr-2">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
