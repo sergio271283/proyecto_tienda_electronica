@@ -67,3 +67,19 @@
         }
     }
 }
+@media (max-width: 576px){
+    .grillapie{
+    display: grid;
+    grid-template-areas: 
+    "logopie"
+    "sobrefys"
+    "serviciosfys"
+    "comunidadfys"
+    ;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    background-color: black;
+    padding-bottom: 5rem;
+    }
+    
+}

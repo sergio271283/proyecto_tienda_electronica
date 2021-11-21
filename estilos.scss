@@ -12,15 +12,13 @@
     grid-template-columns: 20% 60% 20%;
 
 }
-@media (min-width: 600px){
+@media (max-width: 576px){
     .grilla{
         display: grid;
         grid-template-areas:
         "secciones secciones secciones"
-        "categorias categorias categorias"
-        "publicidad publicidad publicidad"
         ;
-
+        grid-template-columns: 100%;
     }
 }
 
@@ -61,6 +59,8 @@
     
     
 }
+
+
 /* --------------SECCIONES --------------------- */
 .secciones{
     grid-area: secciones;
