@@ -12,6 +12,17 @@
     grid-template-columns: 20% 60% 20%;
 
 }
+@media (min-width: 600px){
+    .grilla{
+        display: grid;
+        grid-template-areas:
+        "secciones secciones secciones"
+        "categorias categorias categorias"
+        "publicidad publicidad publicidad"
+        ;
+
+    }
+}
 
 /* ---------- CATEGORIAS --------------- */
 .categorias{
