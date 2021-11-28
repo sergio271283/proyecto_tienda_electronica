@@ -125,13 +125,23 @@
   .grillapie {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "logopie" "sobrefys" "serviciosfys" "comunidadfys";
+        grid-template-areas: "logopie logopie" "sobrefys serviciosfys" "comunidadfys comunidadfys";
     -ms-grid-rows: auto;
         grid-template-rows: auto;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
     background-color: black;
     padding-bottom: 5rem;
+    padding-left: 0rem;
+  }
+  .sobrefys {
+    padding-left: 0rem;
+  }
+  .serviciosfys {
+    padding-left: 0rem;
+  }
+  .comunidadfys {
+    padding-left: 0rem;
   }
 }
 
@@ -143,16 +153,31 @@
       grid-template-rows: auto auto auto auto auto;
   -ms-grid-columns: 20% 60% 20%;
       grid-template-columns: 20% 60% 20%;
+  background-color: black;
 }
 
 @media (max-width: 576px) {
   .grilla {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "secciones secciones secciones";
+        grid-template-areas: "secciones secciones secciones" "publicidad publicidad publicidad";
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  .grilla {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "secciones secciones publicidad";
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+.publicidad {
+  padding-right: 5rem;
 }
 
 /* ---------- CATEGORIAS --------------- */

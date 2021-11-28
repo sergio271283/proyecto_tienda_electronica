@@ -39,7 +39,6 @@
 .serviciosfys{
     grid-area: serviciosfys;
     padding-top: 3rem;
-
     li{
         color: white;
         list-style: none;
@@ -71,15 +70,23 @@
     .grillapie{
     display: grid;
     grid-template-areas: 
-    "logopie"
-    "sobrefys"
-    "serviciosfys"
-    "comunidadfys"
+    "logopie logopie"
+    "sobrefys serviciosfys"
+    "comunidadfys comunidadfys"
     ;
     grid-template-rows: auto;
-    grid-template-columns: 100%;
+    grid-template-columns: 50% 50%;
     background-color: black;
     padding-bottom: 5rem;
+    padding-left: 0rem;
     }
-    
+    .sobrefys{
+        padding-left: 0rem;
+    }
+    .serviciosfys{
+        padding-left: 0rem;
+    }
+    .comunidadfys{
+        padding-left: 0rem;
+    }
 }
