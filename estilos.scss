@@ -1,75 +1,16 @@
+
+@import "grillacont";
 @import url(./css/bootstrap.css);
 @import "header";
 @import "grillapie";
 
-
-.grilla{
-    display: grid;
-    grid-template-areas: 
-    "categorias secciones publicidad"
-    ;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: 20% 60% 20%;
+body{
     background-color: black;
 }
-@media (max-width: 576px){
-    .grilla{
-        display: grid;
-        grid-template-areas:
-        "secciones secciones secciones"
-        "publicidad publicidad publicidad"
-        ;
-        grid-template-columns: 100%;
-    }
-}
-@media only screen and (max-width: 768px) and (min-width: 576px){
-    .grilla{
-        display: grid;
-        grid-template-areas:
-        "secciones secciones publicidad" 
-        ;
-        grid-template-columns:100%;
-    }
-}
-.publicidad{
-    padding-right: 5rem;
-}
+
 /* ---------- CATEGORIAS --------------- */
 .categorias{
     grid-area: categorias;
-    background-color: black;
-    color: red;
-    padding: 1rem;
-    background-repeat: repeat;
-    font-size: 18px;
-    
-
-    li{
-      padding: 0.5rem;
-      list-style: none;
-    }
-    a{
-      padding: 1rem;
-      margin: 1rem;
-      color: white;
-      font-size: 20px;
-      font-weight:bold;
-
-        text: {
-        decoration:none;
-        align: center;
-        align-items: str-index($string: "", $substring: "s");
-        }
-    }
-    a:hover{
-        color: red;
-        background-color: black;
-        border: 2px solid white;
-        border-radius: 10px;
-        padding: 5px;
-    }
-    
-    
 }
 
 

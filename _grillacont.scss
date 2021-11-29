@@ -1,0 +1,45 @@
+.grilla{
+    display: grid;
+    grid-template-areas: 
+    "categorias secciones publicidad"
+    ;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 20% 60% 20%;
+    background-color: black;
+}
+@media (max-width: 768px){
+    .grilla{
+        display: grid;
+        grid-template-areas:
+        "secciones secciones secciones"
+        "publicidad publicidad publicidad"
+        ;
+        grid-template-columns: 100%;
+    }
+}
+@media (min-width: 768px){
+    .grilla{
+        display: grid;
+        grid-template-areas:
+        "secciones publicidad" 
+        ;
+        grid-template-columns:70% 30%; 
+    }
+    .publicidad{
+        padding-right: 3rem;
+    }
+    .categorias{
+        display: none;
+    }
+}
+@media (min-width: 992px){
+    .grilla{
+        display: grid;
+        grid-template-areas:
+        "categorias secciones publicidad"
+        ;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: auto auto auto auto auto;
+        background-color: black;
+    }
+}

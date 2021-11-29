@@ -1,4 +1,54 @@
 @import url(./css/bootstrap.css);
+.grilla {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "categorias secciones publicidad";
+  -ms-grid-rows: auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  .grilla {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "secciones secciones secciones" "publicidad publicidad publicidad";
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .grilla {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "secciones publicidad";
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
+  }
+  .publicidad {
+    padding-right: 3rem;
+  }
+  .categorias {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .grilla {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "categorias secciones publicidad";
+    -ms-grid-columns: 20% 60% 20%;
+        grid-template-columns: 20% 60% 20%;
+    -ms-grid-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+    background-color: black;
+  }
+}
+
 /* ------------------ BANNER PRINCIPAL -----------------*/
 .banner {
   grid-area: banner;
@@ -145,39 +195,8 @@
   }
 }
 
-.grilla {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "categorias secciones publicidad";
-  -ms-grid-rows: auto auto auto auto auto;
-      grid-template-rows: auto auto auto auto auto;
-  -ms-grid-columns: 20% 60% 20%;
-      grid-template-columns: 20% 60% 20%;
+body {
   background-color: black;
-}
-
-@media (max-width: 576px) {
-  .grilla {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "secciones secciones secciones" "publicidad publicidad publicidad";
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-  }
-}
-
-@media only screen and (max-width: 768px) and (min-width: 576px) {
-  .grilla {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "secciones secciones publicidad";
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-  }
-}
-
-.publicidad {
-  padding-right: 5rem;
 }
 
 /* ---------- CATEGORIAS --------------- */
@@ -185,34 +204,6 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: categorias;
-  background-color: black;
-  color: red;
-  padding: 1rem;
-  background-repeat: repeat;
-  font-size: 18px;
-}
-
-.categorias li {
-  padding: 0.5rem;
-  list-style: none;
-}
-
-.categorias a {
-  padding: 1rem;
-  margin: 1rem;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-}
-
-.categorias a:hover {
-  color: red;
-  background-color: black;
-  border: 2px solid white;
-  border-radius: 10px;
-  padding: 5px;
 }
 
 /* --------------SECCIONES --------------------- */
