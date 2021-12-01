@@ -75,14 +75,6 @@
   text-align: center;
 }
 
-.banner a:hover {
-  color: red;
-  background-color: black;
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 1rem;
-}
-
 /* ********************************************* */
 .grillapie {
   display: -ms-grid;
@@ -218,7 +210,7 @@ body {
 }
 
 /* ***************************************** */
-/* -------SECCION PRODUCTOS ----------*/
+/* -------CONTENIDO ----------*/
 .descripcion {
   grid-area: descripcion;
   color: white;
@@ -231,29 +223,7 @@ body {
   display: inline-block;
 }
 
-.galeria_arduino img {
-  grid-area: galeria_arduino;
-  padding: 1rem;
-  margin: 1rem;
-}
-
 /* ----------------------------------- */
-/* PIE DE PAGINA */
-.pie {
-  grid-area: pie;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-image: url(./img/fondorojo.jpg);
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  color: white;
-}
-
-.footer-menu li {
-  list-style: none;
-}
-
 .publicidad {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
